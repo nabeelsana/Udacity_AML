@@ -18,7 +18,15 @@ i) Scikit-learn : Logistic Regression model with 91.138% Accuracy parameter valu
 ii) Azure AutoML:   model with % Accuracy parameter values:                    
 
 Therefore best pipeline was \\ and best model was \\ with % Accuracy
+
 ## Scikit-learn Pipeline
+Scikit-learn pipeline was based on prescribed LogisticRegression classifier. This was suitable as task was binary classification (yes,no). 
+Data comprised of 32,950 records. It was split into training and test set with 80/20 split. 
+
+Two hyperparameters tuned are
+i) C : Inverse of regularization stregth (smaller value stronger regularization)
+ii) max_iter: Maximum number of iterations taken for the solvers to converge.
+
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
 **What are the benefits of the parameter sampler you chose?**
