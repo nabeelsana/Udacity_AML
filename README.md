@@ -10,11 +10,15 @@ The dataset represents direct markting campaign of a bank. Each record represnts
 Task of machine learning was to train a binary classification model so as to predict whether a potential target of marketing campaign will place deposit or not. 
 
 We used two machine learning pipelines, with primary metric as "Accuracy", as follws: 
+
 i) Scikit-learn piple line with Logistic Regrsssion Classifier and hyperdrive for hyperparameter tuning.
+
 ii) Microsoft Azure proprietary AutoML pipeline for automated machine learing including selection of classifiers and their hyperparameters.
 
 Best models selected under each of the pipelines are as follows: 
+
 i) Scikit-learn : Logistic Regression model with 91.138% Accuracy parameter values: C1: 0.48392209 , max_iter: 200.
+
 ii) Azure AutoML:   model with % Accuracy parameter values:                    
 
 Therefore best pipeline was \\ and best model was \\ with % Accuracy
@@ -25,7 +29,9 @@ Scikit-learn pipeline was based on prescribed LogisticRegression classifier. Thi
 Data comprised of 32,950 records. It was split into training and test set with 80/20 split. 
 
 Two hyperparameters tuned are
+
 i) C : Inverse of regularization stregth (smaller value stronger regularization)
+
 ii) max_iter: Maximum number of iterations taken for the solvers to converge.
 
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
