@@ -17,11 +17,11 @@ ii) Microsoft Azure proprietary AutoML pipeline for automated machine learing in
 
 Best models selected under each of the pipelines are as follows: 
 
-i) Scikit-learn : Logistic Regression model with 91.138% Accuracy parameter values: C1: 0.48392209 , max_iter: 200.
+i) Scikit-learn : Logistic Regression model with 91.138% Accuracy  and with parameter values: C1: 0.48392209 , max_iter: 200.
 
-ii) Azure AutoML:   model with % Accuracy parameter values:                    
+ii) Azure AutoML:   VotingEnsemble classifier  with 91.639 % Accuracy. Some of parameter values:  n_estimators: 200,  min_samples_lea = 0.03578                 
 
-Therefore best pipeline was \\ and best model was \\ with % Accuracy
+Therefore best pipeline was AzureAutoML and best model was VotingEnsemble classifier with 91.639 % Accuracy
 
 ## Scikit-learn Pipeline
 
@@ -39,9 +39,17 @@ ii) max_iter: Maximum number of iterations taken for the solvers to converge.
 
 We used Hyperdrive package for hyperparameter tunning. This helped to speed model training as we didnot had to manually experiment with hyperparamete tuning. 
 
-In order to define sample space for hyperparamter tuning we used and used RandomParameterSampling class. In this sampling algorithm, parameter values are chosen from a set of discrete values or a distribution over a continuous range.
+In order to define sample space for hyperparamter tuning we  used RandomParameterSampling class. In this sampling algorithm, parameter values are chosen from a set of discrete values or a distribution over a continuous range.
 
 **What are the benefits of the parameter sampler you chose?**
+
+For Hyperdrive package other sampling class available are 
+
+i) GridParameter Sampling: Defines a grid of samples over hyperparameter search space.
+
+ii) BayesianParameter Sampling: It tries to intelligently pick the next sample of hyperparameters based on how the previous sample performed. 
+
+As compared to GridParameter sampling Random Parameter is much faster as it is not required to search over entire grid of sample space. However as compared to Bayesian method over selected apprach lacks the element of learning from prior sample performance.
 
 **What are the benefits of the early stopping policy you chose?**
 
