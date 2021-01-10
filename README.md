@@ -21,6 +21,7 @@ Therefore best pipeline was \\ and best model was \\ with % Accuracy
 
 ## Scikit-learn Pipeline
 Scikit-learn pipeline was based on prescribed LogisticRegression classifier. This was suitable as task was binary classification (yes,no). 
+
 Data comprised of 32,950 records. It was split into training and test set with 80/20 split. 
 
 Two hyperparameters tuned are
