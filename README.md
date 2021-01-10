@@ -80,5 +80,16 @@ The main difference between two pipelines was thus their abilty to select and sc
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
+Some of areas of improvements and their impact of model improvement are as follows: 
+
+i) In Hyperdrive pipeline test more classifiers including some of ensemble classifiers as identfied by AutoML. This might improve model performance by identify a faster and more accurate model. 
+ii) In Hyperdrive pipeline use Bayesion Parameter sampling: This might make experiment run faster and be able to quickly idnetify best hyperparameters. 
+
+iii) In Hyperdrive pipeline test more hyperparameters for tunning sucg as penalty, solver, class_weight etc. They might improve model performace by testing a hyperparameter combination that is able to yield more accurate model.
+
+iv) In Hyperdrive pipeline address class imbalance in data (29258 records of "No" class and 3692 records of "Yes" class) by either using SMOto TE resampling technique or using class_weight parameter. 
+
+v) Allow more time for AutoML run. It might be able to cover more classifiers and their hyperparameters and may identify a more accurate model.
+
 ## Proof of cluster clean up
 We used AmlCompute command delete() (documented in our python notebook) to clean up cluster when both pipeline runs has finished.
