@@ -9,10 +9,15 @@ This model is then compared to an Azure AutoML run.
 The dataset represents direct markting campaign of a bank. Each record represnts a potential target for deposit placement with the bank and recorded results whether effort led to placement of deposit or not. 
 Task of machine learning was to train a binary classification model so as to predict whether a potential target of marketing campaign will place deposit or not. 
 
-We used two machine learning pipelines as follws: 
+We used two machine learning pipelines, with primary metric as "Accuracy", as follws: 
 i) Scikit-learn piple line with Logistic Regrsssion Classifier and hyperdrive for hyperparameter tuning.
 ii) Microsoft Azure proprietary AutoML pipeline for automated machine learing including selection of classifiers and their hyperparameters.
 
+Best models selected under each of the pipelines are as follows: 
+i) Scikit-learn : Logistic Regression model with 91.138% Accuracy parameter values: C1: 0.48392209 , max_iter: 200.
+ii) Azure AutoML:   model with % Accuracy parameter values:                    
+
+Therefore best pipeline was \\ and best model was \\ with % Accuracy
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
