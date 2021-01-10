@@ -24,9 +24,12 @@ ii) Azure AutoML:   model with % Accuracy parameter values:
 Therefore best pipeline was \\ and best model was \\ with % Accuracy
 
 ## Scikit-learn Pipeline
+
+**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+
 Scikit-learn pipeline was based on prescribed LogisticRegression classifier. This was suitable as task was binary classification (yes,no). 
 
-Data comprised of 32,950 records. It was split into training and test set with 80/20 split. 
+Data comprised of 32,950 records. There were 29258 records of "No" class and 3692 records of "Yes" class. Thus data has class imbalance issue.  It was split into training and test set with 80/20 split. The 
 
 Two hyperparameters tuned are
 
@@ -34,7 +37,9 @@ i) C : Inverse of regularization stregth (smaller value stronger regularization)
 
 ii) max_iter: Maximum number of iterations taken for the solvers to converge.
 
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+We used Hyperdrive package for hyperparameter tunning. This helped to speed model training as we didnot had to manually experiment with hyperparamete tuning. 
+
+In order to define sample space for hyperparamter tuning we used and used RandomParameterSampling class. In this sampling algorithm, parameter values are chosen from a set of discrete values or a distribution over a continuous range.
 
 **What are the benefits of the parameter sampler you chose?**
 
