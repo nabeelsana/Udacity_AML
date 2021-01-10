@@ -6,7 +6,7 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-The dataset represents direct markting campaign of a bank. Each record represnts a potential target for deposit placement with the bank and recorded results whether effort led to placement of deposit or not. 
+The dataset represents direct markting campaign of a bank. Each record represnts a potential target for deposit placement with the bank and recorded results whether effort led to placement of deposit or not (target column "y"). 
 Task of machine learning was to train a binary classification model so as to predict whether a potential target of marketing campaign will place deposit or not. 
 
 We used two machine learning pipelines, with primary metric as "Accuracy", as follws: 
